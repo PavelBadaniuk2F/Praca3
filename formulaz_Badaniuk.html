@@ -90,6 +90,16 @@
             top: 880px;
             left: 1200px; 
         }
+        .files2{
+            position: absolute;
+            top: 600px;
+            left: 1250px; 
+        }
+        .myFile2{
+            position: absolute;
+            top: 450px;
+            left: 1250px; 
+        }
     </style>
 </head>
 <body bgcolor="#87CEFA">
@@ -183,7 +193,9 @@
 <br><br>
 <font size="5" class="Jezeli">Jezeli masz foto powiązane z hobby, dolącz tutaj?</font>
 <img id="myfilePreview" style="width: 100px; height: 100px;" class="myFile"/>
+<img id="myfilePreview2" style="width: 100px; height: 100px;" class="myFile2"/>
 <p><input type="file" class="files" value="przejrzeć" name="myfile" id="Uploader" accept="image/png, image/jpeg" onchange="PreviewImage();"></p>
+<p><input type="file" class="files2" value="przejrzeć" name="myfile" id="Uploader2" accept="image/png, image/jpeg" onchange="PreviewImage2();"></p>
 <font size="5" class="Jak">Jak dużo czasu to zajmuje na raz?</font>
 <input type="range" class="str" min="0" max="100">
 <font size="1" class="God">1g &nbsp &nbsp &nbsp &nbsp 2g &nbsp &nbsp &nbsp &nbsp 3g &nbsp &nbsp &nbsp &nbsp 5g &nbsp &nbsp &nbsp &nbsp węcej</font>
@@ -204,12 +216,21 @@
              document.getElementById("myfilePreview").src = oFREvent.target.result;
             };
          }; 
+
+         function PreviewImage2() { 
+        var oFReader = new FileReader();
+         oFReader.readAsDataURL(document.getElementById("Uploader2").files[0]);
+          oFReader.onload = function (oFREvent) 
+          {
+             document.getElementById("myfilePreview2").src = oFREvent.target.result;
+            };
+         }; 
    
 </script>
-<button style="width: 150px; height: 100px;" class="but1" onclick="https://pavelbadaniuk2f.github.io/Praca3/">
+<button style="width: 150px; height: 100px;" class="but1" onClick="window.location.reload();">
     Odeślij
 </button>
-<button style="width: 150px; height: 100px;" class="but2" onclick="https://pavelbadaniuk2f.github.io/Praca3/">
+<button style="width: 150px; height: 100px;" class="but2" onClick="window.location.reload();">
   Anulować formularz
 </button>
 </body>
