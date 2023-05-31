@@ -1,36 +1,82 @@
 <html>
   <head>
- <title>zadanie 32-Badaniuk</title>
-<meta charset="utf-8" />
-<style>
-.box-of-chocolates {
-  width: 900px;
-  height: 500px;
-  background-image: url("CO-TO-JEST-GRAFIKA-WEKTOROWA.jpg");
-  padding: 30px;
-   border: 2px dashed orange;
+    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-2">
+    <link rel="Stylesheet" type="text/css"  />
+    <style>
+     table,th, td{
+        border: 1px solid black;
+        border-collapse: collapse;
+      }
+.n1{
+  width: 1000px;
+  height: 400px;
+  border: 1px dashed orange;
+  padding: 50px;
+  background-image: url(tree-736885_960_720.jpg);
 }
-</style>
-</head>
-<body>
-<h1>5)Podaj definicję modelu pudełkowego.</h1>
-<p>Model pudełkowy pozwala nam precyzyjnie określić wymiary elementu HTML na stronie. Każdy z elementów na stronie można bowiem potraktować jako prostokąt o określonych wymiarach, który może posiadać wypełnienie (padding), obramowanie (border) oraz margines (margin).<p>
-<TABLE border="1" RULES=all>
+.n2{
+  width: 900px;
+  height: 300px;
+  border: 1px solid orange;
+  padding: 50px;
+}
+.n3{
+  width: 800px;
+  height: 200px;
+  border: 1px dashed orange;
+  padding: 50px;
+}
+.n4{
+  width: 700px;
+  height: 100px;
+  border: 1px solid orange;
+  padding: 50px;
+}
+.p_{
+  color: orange;
+}
+.p_2{
+  color: orange;
+  position: absolute;
+  padding-left: 300px;
+  margin-bottom: 50px;
+}
+    </style>
+  </head>
+  <body>
+    <h1>Podaj definicję modelu pudełkowego.</h1>
+    Model pudełkowy to schemat, wg którego określane są wielkości części składowych elementu. Elementy prezentowane na stronie nie funkcjonują w próżni i każdy z nich generuje prostokątne pole – pudełko (box). Pudełko składa się z zawartości elementu (content), marginesu wewnętrznego, tj.
+    <br>
+    <br>
+    <TABLE >
 
-<TR> <TD><b>zawartość</b> </TD><TD><center><b>Opis</b></center> </TD></TR>
-
-<TR> <TD>content </TD><TD> zawartość, co oznacza, jaka jest definicja pojęcia w słowniku. Content oznacza zawartość, potocznie: treść, a więc jest to pojęcie odnoszące się do wszystkich elementów zawartych i widocznych na stronie internetowej, zarówno tekstów, jak i meta tagów, plików graficznych czy materiałów wideo. </TD></TR>
-<TR> <TD>padding</TD><TD>Margines wewnętrzny określa odstęp pomiędzy początkiem elementu, a jego treścią. Margines wewnętrzny definiowany jest poprzez deklarację padding (ang. margines wewnętrzny). </TD></TR>
-<TR> <TD> border</TD><TD>kompletne obramowanie wokół tabeli </TD></TR>
-<TR> <TD> margin</TD><TD>to nie jest do końca część elementu, a raczej jedynie jego odstęp. Obszar objęty marginesem nie przyjmuje tła elementu html przypisanego do niego, tylko jego rodzica. Wartość marginesu wyrażana jest najczęściej w px . </TD></TR>
-</TABLE>
-<b><h3>Uwaga 1</h3></b>
-<p>Padding, border i margin mogą mieć zerową wartość.</p>
-<b><h3>Uwaga 2</h3></b>
-<p>Tło elementu jest określone dla wszystkich z podanych powyżej obszarów z wyjątkiem marginesów zewnętrznych, które zawsze są przezroczyste (transparent).</p>
-<div class="box-of-chocolates">
-  Tu siedzą czekoladki!
-</div>
-</body>
-  <!--Pawlo Badaniuk -->
+      <TR> <TD><b>zawartość</b></TD><TD><b>Opisc</b></TD></TR>
+      
+      <TR><TD>content</TD><TD>zawartość elementu </TD></TR>
+      <TR> <TD>padding </TD><TD>otaczające marginesy wewnętrzne, odstęp między obramowaniem i
+        zawartością elementu </TD></TR>
+      <TR> <TD>border </TD><TD> obramowania wokół zawartości elementu, ma styl i kolor. </TD></TR>
+      <TR> <TD> margin</TD><TD>– marginesy wokół ramki (margines zewnętrzny). Jest to pusty obszar wokół
+        ramki, który nie ma koloru tła i jest przeźroczysty.
+         </TD></TR>
+      </TABLE>
+      <h1>Uwaga 1</h1>
+      <p>Padding, border i margin mogą mieć zerową wartość.</p>
+      <h1>Uwaga 2</h1>
+      <p> Tło elementu jest określone dla wszystkich z podanych powyżej obszarów z wyjątkiem
+        marginesów zewnętrznych, które zawsze są przezroczyste (transparent).</p>
+        <center>       <p class="p_2">margin</p><div class="n1">
+          <p class="p_2">border</p>
+        <div class="n2">
+          <p class="p_2">padding</p>
+          <div class="n3">
+            <div class="n4">
+              <center><p class="p_">content</p></center>
+            </div>
+          </div>
+        </div>
+     
+        </div></center>
+  </body>
 </html>
+<!--Badaniuk Pawlo-->
