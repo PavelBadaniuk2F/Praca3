@@ -156,7 +156,52 @@ cale - in (1in=2.54cm)
   </tr>
        <tr>
     <td><b>Gradient liniowy</b></td>
-    <td>Maria Anders</td>
+    <td>Jednozadaniowy opis:
+         <br>
+         <br>
+         <br>
+      selektor { background: linear-gradient(kierunek, kolor1 odległość1, kolor2 odległość2...) }
+      <br>
+      Przyklad:
+  <br>
+      .moj-selektor {
+       <br>
+    background: linear-gradient(to right, #3498db 0%, #ffffff 100%);
+ <br>
+    color: #000000;
+}
+      <br>
+      Parametry:
+      p - akapit,
+        <br>
+• h1 – tytuł
+        <br>
+• td - komórka tabeli
+        <br>
+      słowa kluczowe
+        <br>
+      to top - przejście kolorów nastąpi pionowo z dołu do góry (odpowiednik 0deg)
+       <br>
+to right top - ukośnie z lewego-dolnego do prawego-górnego narożnika
+       <br>
+to right - poziomo z lewej do prawej strony (odpowiednik 90deg)
+       <br>
+to right bottom - ukośnie z lewego-górnego do prawego-dolnego narożnika
+       <br>
+to bottom - pionowo z górny do dołu (odpowiednik 180deg - domyślnie)
+       <br>
+to left bottom - ukośnie z prawego-górnego do lewego-dolnego narożnika
+       <br>
+to left - poziomo z prawej do lewej strony (odpowiednik 270deg)
+       <br>
+to left top - ukośnie z prawego-dolnego do lewego-górnego narożnika
+       <br>
+      Kolor1 odległość1, kolor2 odległość2... - kolejne kolory i ich odległości na linii przejścia
+gradientu. Obowiązkowo trzeba podać przynajmniej dwie pary "kolor odległość". Każda taka
+para jest rozdzielona od kolejnej znakiem przecinka. Wielokropek (czyli "...") na końcu
+należy usunąć. Określenie odległości kolorów nie jest obowiązkowe - wtedy podane barwy
+zostaną rozłożone równomiernie w gradiencie.
+    </td>
   </tr>
             <tr>
     <td><b>Gradient promienisty</b></td>
