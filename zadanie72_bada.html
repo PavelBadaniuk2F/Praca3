@@ -205,7 +205,60 @@ zostaną rozłożone równomiernie w gradiencie.
   </tr>
             <tr>
     <td><b>Gradient promienisty</b></td>
-    <td>Maria Anders</td>
+    <td>Jednozadaniowy opis:
+    <br>
+       <br>
+       <br>
+      selektor { background: radial-gradient(kształt rozmiar at pozycja, kolor1 odległość1, kolor2
+odległość2...) }
+      <br>
+      <br>
+      Przyklad:
+      <br>
+         .moj-selektor 
+      <br>
+    background: radial-gradient(circle, #ff0000 0%, #ffffff 100%);
+<br>
+    color: #000000;
+      <br>
+      <br>
+      Selektorem może być praktycznie dowolny znacznik:
+       <br>
+• p - akapit,
+       <br>
+• h1 – tytuł
+       <br>
+• td - komórka tabeli
+       <br>
+Jako kształ należy wpisać:
+       <br>
+circle - okrąg (domyślnie gdy jako rozmiar podano pojedynczy promień, określony w
+jednostkach długości, a nie w procentach)
+       <br>
+ellipse - elipsa
+      <br>
+      Rozmiar można ustalić na trzy sposoby:
+      <br>
+słowa kluczowe:
+       <br>
+closest-side - gradient będzie się rozchodził do najbliższej krawędzi elementu
+       <br>
+farthest-side - do najdalszej krawędzi
+       <br>
+closest-corner - do najbliższego narożnika
+       <br>
+farthest-corner - do najdalszego narożnika (domyślnie)
+       <br>
+promień - podany za pomocą jednostek długości lub procentowo
+       <br>
+poziom pion - poziomy i pionowy promień elipsy, określony za pomocą jednostek
+długości lub procentowo
+       <br>
+      Pozycję definiuje się identycznie jak w przypadku położenia tła obrazkowego.
+       <br>
+Kolor1 odległość1, kolor2 odległość2... - oznaczają to samo, co w przypadku gradientu
+liniowego.
+    </td>
   </tr>
 </table> 
 </body>
